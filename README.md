@@ -24,6 +24,7 @@ It also includes DOM practice exercises and five daily coding challenges.
 ## Features
 
 ### Interactive To-Do List
+
 - Add tasks using the Add Task button or Enter key.
 - Reject empty and whitespace-only tasks.
 - Mark tasks as completed.
@@ -35,6 +36,7 @@ It also includes DOM practice exercises and five daily coding challenges.
 - Press Enter to save an edit or Escape to cancel.
 
 ### DOM Practice
+
 - Select and traverse DOM elements.
 - Modify text, attributes, and CSS classes.
 - Create, insert, clone, and remove elements.
@@ -43,6 +45,7 @@ It also includes DOM practice exercises and five daily coding challenges.
 - Validate form input.
 
 ### Daily Challenges
+
 1. Change heading colours randomly.
 2. Create and insert a new element.
 3. Remove all images from a page.
@@ -53,9 +56,9 @@ It also includes DOM practice exercises and five daily coding challenges.
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/chukwuma-n/iyf-s12-week-05-chukwuma-n.git
-   ```
+    ```bash
+    git clone https://github.com/chukwuma-n/iyf-s12-week-05-chukwuma-n.git
+    ```
 
 2. Open the project folder in Visual Studio Code.
 3. Open `index.html` in your browser, or use the Live Server extension.

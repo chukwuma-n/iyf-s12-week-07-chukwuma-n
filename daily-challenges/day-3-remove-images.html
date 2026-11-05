@@ -1,32 +1,40 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remove Images</title>
-</head>
-<body>
-    <h1>Removing Images with JavaScript</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Remove Images</title>
+    </head>
+    <body>
+        <h1>Removing Images with JavaScript</h1>
 
-    <img src="https://placehold.co/150x100?text=Image+1" alt="First example image">
-    <img src="https://placehold.co/150x100?text=Image+2" alt="Second example image">
-    <img src="https://placehold.co/150x100?text=Image+3" alt="Third example image">
+        <img
+            src="https://placehold.co/150x100?text=Image+1"
+            alt="First example image"
+        />
+        <img
+            src="https://placehold.co/150x100?text=Image+2"
+            alt="Second example image"
+        />
+        <img
+            src="https://placehold.co/150x100?text=Image+3"
+            alt="Third example image"
+        />
 
-    <p>Click the button to remove all images.</p>
+        <p>Click the button to remove all images.</p>
 
-    <button id="remove-images">Remove All Images</button>
+        <button id="remove-images">Remove All Images</button>
 
-    <script>
-        const button = document.querySelector("#remove-images");
+        <script>
+            const button = document.querySelector("#remove-images");
 
-        button.addEventListener("click", function () {
-            const images = document.querySelectorAll("img");
+            button.addEventListener("click", function () {
+                const images = document.querySelectorAll("img");
 
-            images.forEach(function (image) {
-                image.remove();
+                images.forEach(function (image) {
+                    image.remove();
+                });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>

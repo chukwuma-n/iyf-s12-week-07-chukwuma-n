@@ -1,29 +1,29 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a New Element</title>
-</head>
-<body>
-    <h1>DOM Element Creation</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create a New Element</title>
+    </head>
+    <body>
+        <h1>DOM Element Creation</h1>
 
-    <button id="add-message">Add Message</button>
+        <button id="add-message">Add Message</button>
 
-    <div id="message-container"></div>
+        <div id="message-container"></div>
 
-    <script>
-        const button = document.querySelector("#add-message");
-        const container = document.querySelector("#message-container");
+        <script>
+            const button = document.querySelector("#add-message");
+            const container = document.querySelector("#message-container");
 
-        button.addEventListener("click", function () {
-            const paragraph = document.createElement("p");
+            button.addEventListener("click", function () {
+                const paragraph = document.createElement("p");
 
-            paragraph.textContent = "I created this paragraph with JavaScript!";
+                paragraph.textContent =
+                    "I created this paragraph with JavaScript!";
 
-            container.appendChild(paragraph);
-        });
-    </script>
-</body>
+                container.appendChild(paragraph);
+            });
+        </script>
+    </body>
 </html>

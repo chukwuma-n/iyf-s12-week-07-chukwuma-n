@@ -1,0 +1,29 @@
+{
+    "name": "iyf-s12-week-07-chukwuma-n",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Week 7 JavaScript best practices project",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "node --test",
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chukwuma-n/iyf-s12-week-07-chukwuma-n.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/chukwuma-n/iyf-s12-week-07-chukwuma-n/issues"
+    },
+    "homepage": "https://github.com/chukwuma-n/iyf-s12-week-07-chukwuma-n#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.39.5",
+        "eslint": "^9.39.5",
+        "globals": "^17.14.0",
+        "prettier": "^3.9.10"
+    }
+}
