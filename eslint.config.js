@@ -8,8 +8,9 @@ export default [
 
     js.configs.recommended,
 
+    // Browser JavaScript files
     {
-        files: ["js/**/*.js"],
+        files: ["js/**/*.js", "cart/**/*.js"],
 
         languageOptions: {
             ecmaVersion: "latest",
@@ -20,6 +21,7 @@ export default [
         },
     },
 
+    // Node.js test files
     {
         files: ["tests/**/*.js"],
 
@@ -28,6 +30,7 @@ export default [
             sourceType: "module",
             globals: {
                 ...globals.node,
+                structuredClone: "readonly",
             },
         },
     },
