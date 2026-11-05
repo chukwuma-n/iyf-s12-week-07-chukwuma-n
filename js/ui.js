@@ -1,4 +1,3 @@
-
 import { filterTodos } from "./todo-logic.js";
 
 export const elements = {
@@ -7,20 +6,13 @@ export const elements = {
     todoList: document.querySelector("#todo-list"),
     itemsLeft: document.querySelector("#items-left"),
     todoFilters: document.querySelector("#todo-filters"),
-    clearCompletedButton: document.querySelector("#clear-completed")
+    clearCompletedButton: document.querySelector("#clear-completed"),
 };
 
 export function render(state) {
-    const {
-        todos,
-        currentFilter
-    } = state;
+    const { todos, currentFilter } = state;
 
-    const {
-        todoList,
-        itemsLeft,
-        todoFilters
-    } = elements;
+    const { todoList, itemsLeft, todoFilters } = elements;
 
     todoList.textContent = "";
 
@@ -28,8 +20,7 @@ export function render(state) {
         return !todo.completed;
     }).length;
 
-    itemsLeft.textContent =
-        `${remaining} ${remaining === 1 ? "item" : "items"} left`;
+    itemsLeft.textContent = `${remaining} ${remaining === 1 ? "item" : "items"} left`;
 
     const visibleTodos = filterTodos(todos, currentFilter);
 
@@ -61,9 +52,7 @@ export function render(state) {
         todoList.appendChild(li);
     });
 
-    const buttons = todoFilters.querySelectorAll(
-        "button[data-filter]"
-    );
+    const buttons = todoFilters.querySelectorAll("button[data-filter]");
 
     buttons.forEach(function (button) {
         const isSelected = button.dataset.filter === currentFilter;

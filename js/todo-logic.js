@@ -1,14 +1,13 @@
-
 export function addTodo(todos, text, nextId) {
     const newTodo = {
         id: nextId,
         text: text.trim(),
-        completed: false
+        completed: false,
     };
 
     return {
         todos: [...todos, newTodo],
-        nextId: nextId + 1
+        nextId: nextId + 1,
     };
 }
 
@@ -23,7 +22,7 @@ export function toggleTodo(todos, id) {
         if (todo.id === id) {
             return {
                 ...todo,
-                completed: !todo.completed
+                completed: !todo.completed,
             };
         }
 
@@ -42,7 +41,7 @@ export function editTodo(todos, id, newText) {
         if (todo.id === id) {
             return {
                 ...todo,
-                text: text
+                text: text,
             };
         }
 

@@ -1,32 +1,31 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Content</title>
-</head>
-<body>
-    <h1>Copy Content with JavaScript</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Copy Content</title>
+    </head>
+    <body>
+        <h1>Copy Content with JavaScript</h1>
 
-    <div id="source">
-        <p>This is the original message.</p>
-    </div>
+        <div id="source">
+            <p>This is the original message.</p>
+        </div>
 
-    <div id="destination">
-        <p>The copied message will appear here.</p>
-    </div>
+        <div id="destination">
+            <p>The copied message will appear here.</p>
+        </div>
 
-    <button id="copy-content">Copy Content</button>
+        <button id="copy-content">Copy Content</button>
 
-    <script>
-        const source = document.querySelector("#source");
-        const destination = document.querySelector("#destination");
-        const button = document.querySelector("#copy-content");
+        <script>
+            const source = document.querySelector("#source");
+            const destination = document.querySelector("#destination");
+            const button = document.querySelector("#copy-content");
 
-        button.addEventListener("click", function () {
-            destination.textContent = source.textContent.trim();
-        });
-    </script>
-</body>
+            button.addEventListener("click", function () {
+                destination.textContent = source.textContent.trim();
+            });
+        </script>
+    </body>
 </html>

@@ -1,4 +1,3 @@
-
 const STORAGE_KEY = "week7-todo-app";
 
 export function saveTodos(state) {
@@ -24,9 +23,7 @@ export function loadTodos() {
             !Array.isArray(parsedData.todos) ||
             !Number.isInteger(parsedData.nextId) ||
             parsedData.nextId < 1 ||
-            !["all", "active", "completed"].includes(
-                parsedData.currentFilter
-            )
+            !["all", "active", "completed"].includes(parsedData.currentFilter)
         ) {
             return null;
         }

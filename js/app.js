@@ -1,4 +1,3 @@
-
 import { state } from "./state.js";
 
 import {
@@ -6,18 +5,12 @@ import {
     deleteTodo,
     toggleTodo,
     editTodo,
-    clearCompleted
+    clearCompleted,
 } from "./todo-logic.js";
 
-import {
-    saveTodos,
-    loadTodos
-} from "./storage.js";
+import { saveTodos, loadTodos } from "./storage.js";
 
-import {
-    elements,
-    render
-} from "./ui.js";
+import { elements, render } from "./ui.js";
 
 // Load previously saved application data
 const savedState = loadTodos();
@@ -43,11 +36,7 @@ elements.form.addEventListener("submit", function (event) {
         return;
     }
 
-    const result = addTodo(
-        state.todos,
-        taskText,
-        state.nextId
-    );
+    const result = addTodo(state.todos, taskText, state.nextId);
 
     state.todos = result.todos;
     state.nextId = result.nextId;
@@ -144,11 +133,7 @@ elements.todoList.addEventListener("dblclick", function (event) {
         editingFinished = true;
 
         if (saveChanges) {
-            state.todos = editTodo(
-                state.todos,
-                taskId,
-                editInput.value
-            );
+            state.todos = editTodo(state.todos, taskId, editInput.value);
         }
 
         updateApp();
